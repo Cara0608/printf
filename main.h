@@ -13,7 +13,7 @@ typedef struct print {
 
 int _printf(const char *format, ...);
 int (*get_fine(char *s, int index))(va_list,char *, unsigned int);
-int handl_buf(char *buf, char *c, unsigned int ibuf);
+int handl_buf(char *buf, char c, unsigned int ibuf);
 int print_buf(char *buf, unsigned int nbuf);
 
 int print_chr(va_list argument, char *buf, unsigned int ibuf);
