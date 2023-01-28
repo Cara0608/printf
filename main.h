@@ -18,6 +18,6 @@ int print_buf(char *buf, unsigned int nbuf);
 
 int print_chr(va_list argument, char *buf, unsigned int ibuf);
 
-printf("%s I am %d years old.\n", "Cara", 4);
+printf("I am Cara with the %c", 'C');
 
 #endif
