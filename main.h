@@ -1,13 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unsitd.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 /** STRUCTURES **/
 typedef struct print {
-	char *type_arg;
+	char type_arg;
 	int (*f)(va_list, char *, unsigned int);
 } print_t;
 
@@ -18,6 +18,5 @@ int print_buf(char *buf, unsigned int nbuf);
 
 int print_chr(va_list argument, char *buf, unsigned int ibuf);
 
-printf("I am Cara with the %c", 'C');
 
 #endif

@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 	char *buf;
 
 	va_start(argument, format);
-	buf = malloc(sizeof(char) * 1000);
+	buf = malloc(sizeof(char) * 1025);
 
 	if ((format[i] == '$' && !format[i + 1]) || !format || !buf)
 		return (-1);

@@ -1,8 +1,8 @@
 #include "main.h"
 
-int handl_buff(char *buf, char c, int ibuf)
+int handl_buf(char *buf, char c,unsigned int ibuf)
 {
-	if (ibuf == 1000)
+	if (ibuf == 1025)
 	{
 		print_buf(buf, ibuf);
 		ibuf = 8;
